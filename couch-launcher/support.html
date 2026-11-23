@@ -22,6 +22,10 @@
   <details><summary>The weather is for the wrong city</summary>
     <p>Open the <b>Launcher</b> tile and choose <b>Weather location</b>. Until you pick a city, Couch Launcher uses the largest city in your TV's time zone.</p></details>
 
+  <details><summary>The night light only works on Couch Launcher's own screens</summary>
+    <p>To warm up every app, Couch Launcher needs Android's <b>Display over other apps</b> permission. Open the <b>Night light</b> tile, set <b>Where</b> to <b>All apps</b> and press OK on <b>Allow over other apps</b>. In the TV's settings, choose Couch Launcher and turn the permission on. On most TVs it is under Settings, Apps, Special app access, Display over other apps.</p>
+    <p>Some TVs have no such setting, and Android 10 and later don't allow it on low-memory "Go" devices. There the night light covers Couch Launcher's own screens. With a computer and adb you can still allow it once: <code>adb shell appops set app.couchmouse.launcher SYSTEM_ALERT_WINDOW allow</code>. Android hides the night light on its own Settings screens, for safety.</p></details>
+
   <details><summary>What does Couch Launcher send over the internet?</summary>
     <p>Only the coordinates of your weather city, to MET Norway's forecast service, and, with the online art collection on, requests for public-domain paintings from the Art Institute of Chicago. No accounts, no ads, no tracking. See the <a href="privacy">privacy policy</a>.</p></details>
 
